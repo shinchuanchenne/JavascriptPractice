@@ -7,6 +7,13 @@
     <title>Document</title>
   </head>
   <body>
-    <script src="./6.WhosBuyingLunch.js"></script>
+    <script>
+      function whosPlaying(names) {
+        var numberOfPeople = names.length;
+        var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+        var randomPerson = names[randomPersonPosition];
+        return randomPerson + " is going to buy lunch today!";
+      }
+    </script>
   </body>
 </html>

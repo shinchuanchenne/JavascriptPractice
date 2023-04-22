@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var money = prompt("How much money will you give me?");
+      var costPerBottle = prompt("How much is the milk?");
+      function getMilk(money, costPerBottle) {
+        var numberOfBottles = Math.floor(money / costPerBottle);
+        return numberOfBottles;
+      }
+      function calcChange(money, costPerBottle) {
+        var change = money % costPerBottle;
+        return change;
+      }
+      var numberofBottles = getMilk(money, costPerBottle);
+      var change = calcChange(money, costPerBottle);
+      alert(
+        "Hello master, here is your " +
+          numberofBottles +
+          " bottles of milk and here is your " +
+          change +
+          " change."
+      );
+    </script>
+  </body>
+</html>
